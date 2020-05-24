@@ -1,4 +1,3 @@
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const libraryTarget = process.env.LIBRARY_TARGET;
 const names = {
   var: "sparkline",
@@ -32,6 +31,5 @@ module.exports = {
   },
 
   plugins: [
-    new UglifyJSPlugin({sourceMap: true})
   ]
 };
